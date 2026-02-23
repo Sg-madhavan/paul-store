@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GiftKadai - Customized Gifts</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header>
+    <h1 class="logo">🎁 pd fashion</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Products</a>
+      <a href="#">Contact</a>
+      <button onclick="openCart()">🛒 Cart</button>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h2>Create Your Own Memories 💖</h2>
+    <p>Customized gifts for your loved ones</p>
+    <button class="shop-btn">Shop Now</button>
+  </section>
+
+  <!-- PRODUCTS -->
+  <section class="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+
+      <div class="card">
+        <img src="https://via.placeholder.com/200" />
+        <h3>Photo Frame</h3>
+        <p>₹499</p>
+        <button onclick="addToCart('Photo Frame')">Customize</button>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/200" />
+        <h3>Magic Mug</h3>
+        <p>₹399</p>
+        <button onclick="addToCart('Magic Mug')">Customize</button>
+      </div>
+
+      <div class="card">
+        <img src="https://via.placeholder.com/200" />
+        <h3>Name Lamp</h3>
+        <p>₹799</p>
+        <button onclick="addToCart('Name Lamp')">Customize</button>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CART MODAL -->
+  <div id="cartModal" class="cart-modal">
+    <div class="cart-content">
+      <span onclick="closeCart()" class="close">&times;</span>
+      <h2>Your Cart</h2>
+      <ul id="cartItems"></ul>
+    </div>
+  </div>
+
+<script src="./script.js"></script>
+</body>
+</html>
